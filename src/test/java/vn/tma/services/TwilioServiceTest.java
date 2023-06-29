@@ -1,14 +1,12 @@
-package vn.tma.Services;
+package vn.tma.services;
 
 
-import com.twilio.jwt.accesstoken.AccessToken;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
-import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import vn.tma.Services.Twilio.TwilioService;
+import vn.tma.services.twilio.TwilioService;
 import vn.tma.TwilioConfig;
 
 @QuarkusTest

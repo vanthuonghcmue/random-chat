@@ -1,0 +1,9 @@
+CREATE TABLE organizations
+(
+    id         BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name       VARCHAR(255) UNIQUE                 NOT NULL,
+    owner_id      BIGINT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    FOREIGN KEY (owner_id) REFERENCES users (id) ON DELETE SET NULL
+);

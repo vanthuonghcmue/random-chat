@@ -1,11 +1,9 @@
-package vn.tma.Services.Twilio;
+package vn.tma.services.twilio;
 
-import jakarta.annotation.PostConstruct;
 import jakarta.inject.Inject;
 import com.twilio.jwt.accesstoken.AccessToken;
 import com.twilio.jwt.accesstoken.VideoGrant;
 import jakarta.enterprise.context.ApplicationScoped;
-import org.eclipse.microprofile.config.ConfigProvider;
 import vn.tma.TwilioConfig;
 
 @ApplicationScoped

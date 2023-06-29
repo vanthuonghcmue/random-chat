@@ -1,4 +1,4 @@
-package vn.tma.Services.Websockets;
+package vn.tma.services.websockets;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;

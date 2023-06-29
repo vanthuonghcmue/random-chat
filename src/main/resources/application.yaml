@@ -1,0 +1,39 @@
+quarkus:
+  # http server
+  http:
+    port: 3000
+
+  # Database
+  datasource:
+    db-kind: postgresql
+    username: my_user
+    password: password123
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/thuong-ks-java
+
+  # Run Flyway migrations automatically or not
+  flyway:
+    baseline-on-migrate: true
+    migrate-at-start: true
+
+  # Logging
+  log:
+    console:
+      enable: true
+      json: false
+    file:
+      enable: true
+      path: trace.log
+      json: true
+      level: ALL
+    level: INFO
+    category:
+      # Log level for package vn.tma
+      "vn.tma":
+        level: DEBUG
+
+twilio:
+  account-sid: ACbfda7a495cd19245aa4cf67f8fade4b9
+  auth-token: cce97f47242925d56b6a3a9a364d6d4c
+  api-key: SK260702d49ee6fad786641285240ae791
+  api-secret: E70adcbhcTtp8UXVSol3xk2u9qtwfSHy
